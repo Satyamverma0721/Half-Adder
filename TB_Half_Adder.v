@@ -23,7 +23,7 @@
 module TB_Half_Adder();
 reg a,b;
 wire sum,carry;
-Half_Adder do (a,b,sum,carry);
+  Half_Adder do (.a(a),.b(b),.sum(sum),.carry(carry));
 initial begin 
 #10 a =0; b = 0;
 #10 a =0; b = 1;
