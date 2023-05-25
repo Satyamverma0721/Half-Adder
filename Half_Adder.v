@@ -26,22 +26,7 @@ module Half_Adder(
  output sum,
  output carry
     );
- // Data level
 assign sum = a^b;
 assign carry = a&b;
-/* gate level
-xor x1 (sum ,a,b);
-and a1 (carry,a,b);
-// Behavirol Modelling*/
-/*always@(a or b)
-begin
-case({a,b})
-2'b00:begin sum =1'b0;carry =1'b0;end
-2'b01:begin sum =1'b1;carry =1'b0;end
-2'b10:begin sum =1'b1;carry =1'b0;end
-2'b11:begin sum =1'b0;carry =1'b1;end
 
-endcase
-end
-*/
 endmodule
